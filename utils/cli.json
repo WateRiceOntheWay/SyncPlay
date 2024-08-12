@@ -1,0 +1,35 @@
+{
+  "head": {
+    "title": "SyncPlay",
+    "description": "A tool to sync play a video with your friends.",
+    "version": "0.0.1",
+    "author": "Waterice Tang",
+    "pages": {
+      "name": "sync_play",
+      "child": [
+        {
+          "name": "server",
+          "child": []
+        },
+        {
+          "name": "client",
+          "child": []
+        }
+      ]
+    }
+  },
+  "body": {
+    "sync_play": {
+      "index": "Input [s/server] to start a new server, [c/client] to start a client. [q/quit/..] to quit. [h/help] to show the help document.",
+      "help": "This is a help document for sync_play. You can use this tool to sync play a video with your friends. You can start a server or a client. The server will send the video to the client and the client will play the video. You can use the following commands: \n[s/server]\tto start a new server\n[c/client]\tto start a client\n[q/quit/..]\tto quit\n[h/help]\tto show the help document."
+    },
+    "server": {
+      "index": "Successfully started a server. You can use the browser to start a media freely. \n Following media supply are supported:\nBilibili\nMutefun\nKugou Music\n\nInput [h/help] for more information. \nWaiting for clients to connect...",
+      "help": "This is a help document for server. You can use this tool to start a server to sync play a video with your friends. You can use the following commands: \n[h/help]\tto show the help document.\n[q/quit/..]\tto stop the server and back to the main menu.\n[p/podcast]\tto podcast to all connected clients."
+    },
+    "client": {
+      "index": "Successfully started a client. You can use the browser to play the video. \n Following media supply are supported:\nBilibili\nMutefun\nKugou Music\n\nInput [h/help] for more information. \nWaiting for the server to send the media...",
+      "help": "This is a help document for client. You can use this tool to start a client to sync play a video with your friends. You can use the following commands: \n[h/help]\tto show the help document.\n[q/quit/..]\tto stop the client and back to the main menu.\n[s/sync]\tto sync the state from the server."
+    }
+  }
+}
